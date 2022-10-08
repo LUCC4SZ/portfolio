@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+/* Body */
+
+body{
+    font-family: 'MiFuente';
+}
+
+/* Header */
+
+header{
+    background-color: #1433ff;
+    padding: 20px;
+}
+
+.cabeza{
+    background-color: #fff;
+    width: fit-content;
+}
+
+header h1{
+    font-weight: 600;
+}
+
+header h2{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #4f62dd;
+    padding: 20px;
+    height: 500px;
+}
+
+.foto{
+    width: 250px;
+    border-radius: 180px;
+    transition: filter 0.5s;
+    transition-timing-function: ease-out;
+    filter: grayscale(100%);
+}
+
+.foto:hover{
+    filter: grayscale(0%);
+}
+
+/* Section */
+
+section{
+    width: 800px;
+    /* height: 250px; */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 10px 10px 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* Article */
+
+article{
+    width: 95%;
+}
+
+article p{
+    font-size: 20px;
+}
+
+/* Una pequeña presentación de mí */
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Iconos de los lenguajes que conozco */
+
+.lenguajes{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.icono{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.icono img{
+    opacity: 1;
+    /* display: block; */
+    /* width: 100%; */
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.icono:hover img{
+    opacity: 0.3;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.icono:hover .middle{
+    opacity: 1;
+}
+
+.text {
+    background-color: #4f62dd;
+    color: white;
+    font-size: 16px;
+    padding: 10px 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #091247;
+    padding: 20px;
+    color: #fff;
+    /* background-image: url(../img/IMG_20220105_184826454.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition: filter 1s;
+    filter: brightness(50%);
+}
+
+footer:hover{
+    filter: brightness(100%);
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    background-color: #4f62dd;
+    color: #091247;
+}
+
+ul{
+    list-style: none;
+}
+
+footer img{
+    width: 45px;
+}
